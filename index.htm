@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="message"></div>
+    <button type="button">Heads</button>
+    <button type="button">Tails</button>
+    <script>
+        const message = document.querySelector('.message');
+        const buttons = document.querySelectorAll('button');
+        console.log(buttons);
+        for (let i = 0; i < buttons.length; i++) {
+            console.log(buttons[i]);
+            buttons[i].addEventListener("click",function(e){
+                console.log(e.target.innerHTML);
+            });
+        }
+    </script>
+</body>
+</html>
